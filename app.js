@@ -9,6 +9,26 @@
 
 //enable arrow keys to move the snake - right, left, up, and down
 //make the snake move a certain number of pixels - 10 for direction
+
+
+//constants
+let snake = {}
+
+
+
+//variables
+
+
+//cached element references
+
+
+
+//event listeners
+
+
+
+//functions
+
 function movebyArrows (event) {
 const RIGHT_KEY: 37;
 
