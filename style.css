@@ -1,5 +1,46 @@
-/*style the 🐍 
+/*style the 🐍 */
 
-/*style the box
+/*style the box*/
+html {
+    box-sizing: border-box
+  }
+
+  *::before, /* All ::before pseudo-elements */
+  *::after { /* All ::after pseudo-elements */
+    /* height & width will now include border & padding by default
+       but can be over-ridden as needed */
+    box-sizing: inherit;
+  }
+  
+
+body {
+    background-color: #C4C4C4;
+}
+
+
+h1 {
+height: 64px;
+
+font-family: Ribeye;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 41px;
+text-align: center;
+
+color: #000000;
+
+}
+
+
+section {
+width: 800px;
+height: 600px;
+margin: auto;
+
+border: 3px solid #AE81F7;
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 
 
