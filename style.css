@@ -19,28 +19,46 @@ body {
 
 
 h1 {
-height: 64px;
+    height: 64px;
 
-font-family: Ribeye;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 41px;
-text-align: center;
+    font-family: Ribeye;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
 
-color: #000000;
+    color: #000000;
+}
 
+h2 {
+    text-align: center;
+}
+
+#gameboard {
+    width: 800px;
+    height: 600px;
+    margin: auto;
+
+    border: 3px solid #AE81F7;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
 }
 
 
-section {
-width: 800px;
-height: 600px;
-margin: auto;
-
-border: 3px solid #AE81F7;
-box-sizing: border-box;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.cell {
+    outline: 1px dashed rgba(15, 10, 222, 0.1);
+    display: inline-block;
 }
 
+.food {
+    background-color: red;
+}
+
+.snake {
+    background-color: yellow;
+}
 
