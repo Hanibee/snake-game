@@ -19,11 +19,13 @@
 
 
 //constants
-
+//make points update h4
+//hide h3 when spacebar is pressed
+//when game is over, display game over message and show reset button
 
 
 //variables
-let isWinner, score, snake
+let isWinner, score, lengthAdded, food
 
 var score = 0;
 
@@ -33,6 +35,7 @@ const resetBtn = document.querySelector("#reset-button")
 //loop through divs using a queryselector
 const cells = document.querySelectorAll('.cell');
 cells.forEach(console.log);
+//do I label each of the cells here?
 
 //event listeners
 //when spacebar is pressed, snake starts moving in the direction of right
@@ -47,7 +50,7 @@ document.addEventListener('keyup', event => {
     if (event.code === 'ArrowDown') {
         console.log('left arrow is pressed')
     } if (event.code === 'ArrowUp') {
-        updateYPosition(moveRate)
+        updateYPosition(cell)
     } if (event.code === 'ArrowLeft') {
         updateYPosition(-moveRate)
     } if (event.code === 'ArrowRight') {
