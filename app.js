@@ -25,7 +25,7 @@
 
 
 //variables
-let isWinner, score, lengthAdded, food
+let isWinner, lengthAdded
 
 var score = 0;
 
@@ -33,9 +33,15 @@ var score = 0;
 //cached element references
 const resetBtn = document.querySelector("#reset-button")
 //loop through divs using a queryselector
+function init() {
 const cells = document.querySelectorAll('.cell');
-cells.forEach(console.log);
-//do I label each of the cells here?
+for (i=0; i < cells.length; i++) {
+    idName = i.toString();
+    cells[i].setAttribute('id', idname);
+    console.log(cells[i]);
+}
+}
+//! how do I label each of the cells here?
 
 //event listeners
 //when spacebar is pressed, snake starts moving in the direction of right
@@ -48,13 +54,13 @@ if (event.code === 'Space') {
 
 document.addEventListener('keyup', event => {
     if (event.code === 'ArrowDown') {
-        console.log('left arrow is pressed')
+        updateYPosition('.cell')
     } if (event.code === 'ArrowUp') {
-        updateYPosition(cell)
+        updateYPosition('.cell')
     } if (event.code === 'ArrowLeft') {
-        updateYPosition(-moveRate)
+        updateXPosition(-moveRate)
     } if (event.code === 'ArrowRight') {
-        updateYPosition(-moveRate)
+        updateXPosition(-moveRate)
     }
 });
 
@@ -65,8 +71,23 @@ document.addEventListener('keyup', event => {
 //functions
 // form.addEventListener("reset", init)
 
-for (var i = 0, len = ____.length; i < len; i++) {
+// for (var i = 0, len = ____.length; i < len; i++) {
+// }
+
+
+function init() {
+    resetBtn.setAttribute("hidden", true);
+    document.getElementById("score");
+    if isWinner = "true" {
+        messageEl.innerText = "Game Over";
+        resetBtn.removeAttribute("hidden");
+    }
 }
+
+
+
+
+
 
 
 
