@@ -33,15 +33,14 @@ var score = 0;
 //cached element references
 const resetBtn = document.querySelector("#reset-button")
 //loop through divs using a queryselector
-function init() {
+function idCells {
 const cells = document.querySelectorAll('.cell');
 for (i=0; i < cells.length; i++) {
     idName = i.toString();
-    cells[i].setAttribute('id', idname);
+    cells[i].setAttribute('id', idName);
     console.log(cells[i]);
 }
 }
-//! how do I label each of the cells here?
 
 //event listeners
 //when spacebar is pressed, snake starts moving in the direction of right
@@ -78,14 +77,11 @@ document.addEventListener('keyup', event => {
 function init() {
     resetBtn.setAttribute("hidden", true);
     document.getElementById("score");
-    if isWinner = "true" {
+    if (isWinner = "true") {
         messageEl.innerText = "Game Over";
         resetBtn.removeAttribute("hidden");
     }
 }
-
-
-
 
 
 
@@ -100,6 +96,9 @@ function init() {
 //set points equal to 0 at start of game
 //after light-up boxes are selected by snake, add points
 //make light-up boxes appear randomly across the board
+
+
+
 
 
 
