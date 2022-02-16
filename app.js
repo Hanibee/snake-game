@@ -33,7 +33,7 @@ var score = 0;
 //cached element references
 const resetBtn = document.querySelector("#reset-button")
 //loop through divs using a queryselector
-function idCells {
+function idCells() {
 const cells = document.querySelectorAll('.cell');
 for (i=0; i < cells.length; i++) {
     idName = i.toString();
