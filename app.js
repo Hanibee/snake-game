@@ -70,6 +70,7 @@ if (event.code === 'Space') {
     }
 });
 
+//change direction 
 document.addEventListener('keyup', event => {
     if (event.code === 'ArrowDown') {
         changedirection = 3;
