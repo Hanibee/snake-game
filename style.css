@@ -14,33 +14,50 @@ html {
   
 
 body {
-    background-color: #C4C4C4;
+    background-color: rgba(18, 70, 214, 1);
 }
 
 
 h1 {
-    height: 64px;
-
+    height: 60px;
     font-family: Ribeye;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 35px;
     line-height: 41px;
     text-align: center;
 
-    color: #000000;
+    color: #bc13fe;
+    text-shadow: 
+    0 0 7px #fff,
+    0 0 10px #AE81F7,
+    0 0 21px #bc13fe,
+    0 0 42px #AE81F7,
+    0 0 82px #bc13fe,
+    0 0 92px #AE81F7,
+    0 0 102px #bc13fe,
+    0 0 151px #AE81F7;
 }
+
 
 h2 {
     text-align: center;
 }
+
 
 #gameboard {
     width: 800px;
     height: 600px;
     margin: auto;
 
+    background-color: black;
     border: 3px solid #AE81F7;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #AE81F7,
+    0 0 0.8rem #AE81F7,
+    0 0 4.8rem #bc13fe,
+    inset 0 0 1.3rem #AE81F7;
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     display: grid;
@@ -50,17 +67,54 @@ h2 {
 
 
 .cell {
-    outline: 1px dashed rgba(15, 10, 222, 0.1);
+    /* outline: 1px dashed rgba(15, 10, 222, 0.1); */
     display: inline-block;
 }
 
+.score {
+    background-color: rgb(241, 120, 39);
+    box-shadow:
+          0 0 7px rgb(241, 120, 39),
+          0 0 10px rgb(241, 120, 39),
+          0 0 21px #fff,
+          0 0 42px rgb(241, 120, 39),
+          0 0 82px rgb(241, 120, 39),
+          0 0 92px rgb(241, 120, 39),
+          0 0 102px rgb(241, 120, 39),
+          0 0 151px rgb(241, 120, 39);
+}
+
 .food {
-    background-color: red;
+    background-color: rgb(241, 120, 39);
+    box-shadow:
+          0 0 7px rgb(241, 120, 39),
+          0 0 10px rgb(241, 120, 39),
+          0 0 21px #fff,
+          0 0 42px rgb(241, 120, 39),
+          0 0 82px rgb(241, 120, 39),
+          0 0 92px rgb(241, 120, 39),
+          0 0 102px rgb(241, 120, 39),
+          0 0 151px rgb(241, 120, 39);
 }
 
 .snake {
-    background-color: yellow;
+    border-radius: 25%;
+    background-color: green;
+        box-shadow:
+          0 0 7px green,
+          0 0 10px green,
+          0 0 21px #fff,
+          0 0 42px #0fa,
+          0 0 82px #0fa,
+          0 0 92px #0fa,
+          0 0 102px #0fa,
+          0 0 151px #0fa;
 }
+
+
+
+
+
 
 
 
