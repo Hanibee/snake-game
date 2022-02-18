@@ -52,7 +52,13 @@ for (i=0; i < cells.length; i++) {
 
 document.addEventListener('keyup', event => {
 if (event.code === 'Space') {
-    document.getElementById('pls_hide').style.visibility = "hidden";
+    if(event.code == 32 && event.target == document.body) {
+            event.preventDefault();
+    }
+    document.getElementById('toHide').style.visibility = "hidden";
+    document.getElementById('gameboard').scrollIntoView({behavior: "smooth", block: "center"});
+    score = 0;
+    document.getElementById("210").textContent = score.toString();
     spawnNewFood()
     snake = document.querySelectorAll(".snake");
     for (s=0; s<snake.length; s++){
@@ -143,6 +149,8 @@ function snakeyEat(){
     if (current_food.classList.contains("snake")){
         current_food.classList.remove("food");
         spawnNewFood();
+        score += 1;
+        document.getElementById("210").textContent = score.toString();
         return true;        
     }else{return false};
 }
