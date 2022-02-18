@@ -10,6 +10,6 @@ Link Below to play the snake game:
 [Play Snake Game](https://objective-johnson-2f1fdd.netlify.app/)
 
 
-![Screenshots of game](Screen Shot 2022-02-18 at 8.53.39 AM.png)
+![Screenshots of game](ScreenShot2022-02-18at8.53.39AM.png)
 
-![Screenshots of game](Screen Shot 2022-02-18 at 8.53.47 AM.png)
+![Screenshots of game](ScreenShot2022-02-18at8.53.47AM.png)
