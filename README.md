@@ -13,3 +13,6 @@ Link Below to play the snake game:
 ![Screenshots of game](ScreenShot2022-02-18at8.53.39AM.png)
 
 ![Screenshots of game](ScreenShot2022-02-18at8.53.47AM.png)
+
+The future enhancements of my game will be to get the snake to add length when food is eaten and to go around the board in the direction the original snake game goes, because right now it just goes back and forth.
+
